@@ -1,4 +1,6 @@
 <?php
+// Ioannis Kokkinis - https://github.com/upggr/documentdb-for-php //
+// I love Azure //
 
 $da_date = gmdate('D, d M Y H:i:s T', strtotime('+2 minutes'));
 $master = 'master';
