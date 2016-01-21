@@ -1,0 +1,19 @@
+Access Azure DocumentDB resources from php!
+
+Usage :
+
+include 'documentdb-for-php.php';
+
+$host = 'https://yourdocumentdbaccount.documents.azure.com';
+$master_key = 'yourmasterkey==';
+$db = 'yourdbname';
+$db_rid = 'thedbresourceid==';
+$coll = 'yourcollectionname';
+$coll_rid = 'yourcollectionresourceid=';
+$query = "Select * from ..."; // your sql :)
+
+querycoll($host, $db_rid, $coll_rid, $query,$apptype,$useragent,$cachecontrol,$da_date,$api_version,$master,$token,$master_key,$da_date);
+
+You will get back a json response with whatever you asked in the query, that simple!
+
+currently tested for select statements
